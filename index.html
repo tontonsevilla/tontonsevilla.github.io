@@ -9,6 +9,7 @@
 		<title>Git Hub - Personal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -20,7 +21,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="https://avatars2.githubusercontent.com/u/6894466?s=460&v=4" alt="" /></span>
+							<span class="image avatar48"><img id="profile_avatar" src="" alt="" /></span>
 							<h1 id="title">Winston Sevilla</h1>
 							<p>Software Engineer</p>
 						</div>
@@ -32,6 +33,7 @@
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<li><a href="#public_repos" id="public-repos-link"><span class="icon brands fa-git-alt">Public Repos</span></a></li>
 							</ul>
 						</nav>
 
@@ -85,7 +87,7 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="https://tontonsevilla.github.io/angular-demo/" class="image fit"><img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="" /></a>
+										<a target="_blank" href="https://tontonsevilla.github.io/angular-demo/" class="image fit"><img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="" /></a>
 										<header>
 											<h3>Angular Demo</h3>
 										</header>
@@ -177,6 +179,19 @@
 						</div>
 					</section>
 
+				<!-- Public Repos -->
+				<section id="public_repos" class="four">
+					<div class="container">
+
+						<header>
+							<h2>Public Repos</h2>
+						</header>
+
+						<ul id="repos_list" class="list-group bg-transparent"></ul>
+
+					</div>
+				</section>
+
 			</div>
 
 		<!-- Footer -->
@@ -197,6 +212,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/github.api.js"></script>
 
 	</body>
 </html>
