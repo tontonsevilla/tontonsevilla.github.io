@@ -29,9 +29,11 @@ var githubApi = {
             // Begin accessing JSON data here
             var data = JSON.parse(this.response)
             var imgAvatar = document.getElementById('profile_avatar');
+            var title = document.getElementById('title');
         
             if (request.status >= 200 && request.status < 400) {
                 imgAvatar.src = data.avatar_url;
+                title.innerHTML = data.name
             } else {
                 console.log('error');
             }

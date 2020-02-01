@@ -1,4 +1,7 @@
 $(function(){
+
+    $('#back-to-top').tooltip();
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {
             $('#back-to-top').fadeIn();
@@ -15,6 +18,6 @@ $(function(){
         return false;
     });
     
-    $('#back-to-top').tooltip('show');
+    $('.copyright li:first').html(`${new Date().getFullYear()} &copy; tontonsevilla.github.io. All rights reserved.`);
 
 });
