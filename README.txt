@@ -1,3 +1,7 @@
+A GitHub Personal Page base on the Prologue HTML5 Template and modified/extends in building this page.
+
+Credits to the group who design this tempaltes.
+
 Prologue by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
